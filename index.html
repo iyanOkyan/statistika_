@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Statistika (Kuartil, Desil, Persentil)</title>
+    <link rel="icon" href="logo.jpeg" type="image/x-icon" />
+
+    <style>
+      body {
+        background: url("bg.png");
+        background-size: cover;
+        padding-left: 200px;
+        padding-right: 200px;
+      }
+
+      table {
+        text-align: center;
+        min-width: 50%;
+      }
+
+      td {
+        width: 100px;
+        height: 30px;
+      }
+
+      td input {
+        text-align: center;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div
+      style="
+        background: #17202a;
+        text-align: center;
+        color: white;
+        padding: 30px;
+        display: grid;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        gap: 10px;
+        margin-top: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      "
+    >
+      <strong style="font-size: 21px">Muhammad Sufyan</strong>
+      <span style="text-decoration: underline">231101070011</span>
+      <strong style="font-size: 30px"
+        >STATISTIKA (Kuartil,Desil,Persentil)</strong
+      >
+    </div>
+    <div style="background: white; padding: 50px; margin-top: -10px">
+      <center>
+        <span style="font-size: 20px">tabel nilai ulangan matematika.</span>
+        <br />
+        <br />
+        <table
+          border="1pt"
+          style="border-collapse: collapse; font-size: 11pt"
+          cellpadding="5cm"
+          id="nilai_ulangan"
+        ></table>
+        <br />
+        <span style="background: red; color: red">....</span>
+        <strong>Kuartil</strong>
+        <span style="background: yellow; color: yellow">....</span>
+        <strong>Desil</strong>
+        <span style="background: orange; color: orange">....</span>
+        <strong>Presentil</strong>
+      </center>
+      <ol type="A">
+        <h3>
+          <li>
+            Kuartil
+            <p
+              style="
+                font-weight: normal;
+                text-indent: 1.27cm;
+                text-align: justify;
+              "
+            >
+              Kuartil adalah ukuran pemusatan data dalam statistik yang membagi
+              data menjadi empat bagian yang sama besar setelah data diurutkan
+              dari nilai terkecil ke nilai terbesar. Kuartil digunakan untuk
+              melihat penyebaran data dan mengetahui persebaran data di sekitar
+              nilai tengah.dalam kehidupan sehari-hari masalah kuartil dapat
+              digunakan misalnya untuk menentukan kelulusan siswa pada suatu
+              ulangan jika ditentukan aturan siswa yang lulus adalah 25% siswa
+              dengan nilai tertinggi.menentukan letak kuartil untuk data
+              berkelompok, caranya sama dengan data tunggal. nilai kuartil
+              dirumuskan sebagai berikut:
+            </p>
+            <div style="display: flex; gap: 10px; font-weight: normal">
+              <div style="border-style: double; width: 350px">
+                <h2>
+                  $$Q_{i}=L_{i} + c\left ( \frac{\frac{i}{4}n - F}{f} \right )$$
+                </h2>
+              </div>
+              <div>
+                <b>Keterangan:</b> <br />
+                Q<small>i</small> = kuartil ke-i <br />
+                L<small>i</small> = tepi bawah kelas kuartil ke-i <br />
+                n = banyaknya data <br />
+                F = frekuensi kumulatif sebelum kelas kuartil <br />
+                f = frekuensi kelas kuartil <br />
+                C = lebar kelas <br />
+              </div>
+            </div>
+            <p style="text-indent: 175px">contoh:</p>
+            $$Q_{3} = L_{3} + c \left ( \frac{\frac{3}{4}-F}{f} \right )= 75,5 +
+            5\left ( \frac{30-22}{9} \right )= 75,5 + 4,44 = 79,94 $$
+          </li>
+          <br />
+          <li>
+            Desil
+            <p
+              style="
+                font-weight: normal;
+                text-indent: 1.27cm;
+                text-align: justify;
+              "
+            >
+              Desil adalah salah satu konsep dalam statistik yang digunakan
+              untuk membagi data terurut menjadi 10 bagian yang sama besar, di
+              mana setiap bagian mencakup 10% dari seluruh data. desil sering
+              digunakan dalam analisis distribusi data, terutama untuk
+              menggambarkan bagaimana data tersebar atau terdistribusi di
+              sepanjang rentang nilai. Secara teknis, desil ke-i adalah nilai
+              pada posisi yang membagi data terurut menjadi bagian-bagian yang
+              proporsional, yang masing-masing berisi 10% data. desil memberikan
+              informasi yang lebih detail tentang distribusi data dibandingkan
+              dengan ukuran pemusat lainnya seperti median atau kuartil.Cara
+              menentukan desil digunakan rumus yang mirip dengan rumus untuk
+              menentukan kuartil berikut
+            </p>
+            <div style="display: flex; gap: 10px; font-weight: normal">
+              <div style="border-style: double; width: 350px">
+                <h2>
+                  $$D_{i} = L_{i} + c \left ( \frac{\frac{i}{10}n-F}{f} \right )
+                  $$
+                </h2>
+              </div>
+              <div>
+                <b>Keterangan:</b> <br />
+                D<small>i</small> = desil ke-i <br />
+                L<small>i</small> = tepi bawah kelas desil ke-i <br />
+                n = banyaknya data <br />
+                F = frekuensi kumulatif sebelum kelas desil <br />
+                f = frekuensi kelas desil <br />
+                C = lebar kelas <br />
+              </div>
+            </div>
+            <p style="text-indent: 175px">contoh:</p>
+            $$D_{2} = L_{2} + c \left ( \frac{\frac{2}{10}-F}{f} \right )= 60,5
+            + 5\left ( \frac{8-6}{3} \right )= 60,5 + 3,33 = 63,83 $$
+          </li>
+          <br />
+          <li>
+            Persentil
+            <p
+              style="
+                font-weight: normal;
+                text-indent: 1.27cm;
+                text-align: justify;
+              "
+            >
+              Persentil adalah ukuran statistik yang digunakan untuk
+              menggambarkan posisi relatif suatu nilai dalam sebuah distribusi
+              data. Persentil membagi data ke dalam seratus bagian yang sama
+              setelah data diurutkan. Misalnya, jika sebuah nilai berada di
+              persentil ke-80, itu berarti 80% dari data lainnya lebih kecil
+              dari nilai tersebut, sementara 20% sisanya lebih besar.
+            </p>
+            <div style="display: flex; gap: 10px; font-weight: normal">
+              <div style="border-style: double; width: 350px">
+                <h2>
+                  $$P_{i} = L_{i} + c \left ( \frac{\frac{i}{100}n-F}{f} \right
+                  ) $$
+                </h2>
+              </div>
+              <div>
+                <b>Keterangan:</b> <br />
+                P<small>i</small> = persentil ke-i <br />
+                L<small>i</small> = tepi bawah kelas Presentil ke-i <br />
+                n = banyaknya data <br />
+                F = frekuensi kumulatif sebelum kelas Presentil <br />
+                f = frekuensi kelas presentil <br />
+                C = lebar kelas <br />
+              </div>
+            </div>
+            <p style="text-indent: 175px">contoh:</p>
+            $$P_{50} = L_{50} + c \left ( \frac{\frac{50}{100}-F}{f} \right )=
+            70,5 + 5\left ( \frac{20-15}{7} \right )= 70,5 + 3,57 = 74,07 $$
+          </li>
+        </h3>
+      </ol>
+    </div>
+    <div
+      style="
+        display: flex;
+        gap: 20px;
+        margin-top: 5px;
+        align-items: center;
+        justify-content: center;
+        padding: 50px;
+        background: #fff;
+      "
+    >
+      <div>
+        Mulai Dari : <input type="number" id="mulai" /><br /><br />
+        Lebar Kelas : <input type="number" id="lebarKelas" /><br /><br />
+        Jumlah data : <input type="number" , id="jumlahData" /><br /><br />
+        Pembagian Data ke i <br />
+        <input type="number" id="input1" />
+        <hr />
+        <input type="number" id="input2" /><br /><br />
+        <input
+          type="button"
+          value="kirim"
+          onclick="hitungData(dataFrekuensiGlobal)"
+        />
+      </div>
+      <table
+        border="1pt"
+        style="border-collapse: collapse; width: 100%"
+        id="table_data"
+      ></table>
+      <div id="penjelasan" style="font-size: 18px"></div>
+    </div>
+    <center>
+      <div style="padding: 10px; background-color: white; margin-top: 5px">
+        <h2>Video Penjelasan</h2>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/K15uKxFnXwg?si=jzZxXarCrqxa8DtJ"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </center>
+
+    <script
+      type="text/javascript"
+      async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.js"
+    ></script>
+
+    <script>
+      var data = [
+        "51-55",
+        "56-60",
+        "61-65",
+        "66-70",
+        "71-75",
+        "76-80",
+        "81-85",
+        "86-90",
+      ];
+      var frekuensi = [2, 4, 3, 6, 7, 9, 6, 3];
+      document.getElementById("nilai_ulangan").innerHTML = `
+        <tr style="background: #17202a; color:white; height: 40px">
+            <th>Nilai</th>
+            <th>Frekuensi</th>
+        </tr>
+        ${data
+          .map(
+            (nilai, index) => `
+        <tr style=" background: ${
+          index == 5
+            ? "red;color:white; "
+            : index == 2
+            ? "yellow;"
+            : index == 4
+            ? "orange;"
+            : ""
+        }">
+            <td>${nilai}</td>
+            <td>${frekuensi[index]}</td>
+        </tr>
+        `
+          )
+          .join("")}
+        `;
+    </script>
+
+    <script>
+      var dataFrekuensiGlobal = [2, 4, 3, 6, 7, 9, 6, 3];
+      hitungData(dataFrekuensiGlobal);
+
+      function hitungData(dataFrekuensi) {
+        var data = [];
+        var dataFrekuensiKumulatif = [dataFrekuensi[0]];
+
+        var mulai = parseInt(document.getElementById("mulai").value) - 1 || 50;
+        var jumlahData =
+          parseInt(document.getElementById("jumlahData").value) || 8;
+        var input1 = document.getElementById("input1").value || 2;
+        var input2 = document.getElementById("input2").value || 4;
+        var pecahan = input1 / input2;
+
+        var lebarKelas =
+          parseInt(document.getElementById("lebarKelas").value) || 5;
+
+        for (var i = 1; i <= jumlahData; i++) {
+          data[i - 1] = `${mulai + 1}-${mulai + lebarKelas}`;
+          mulai += lebarKelas;
+
+          dataFrekuensiKumulatif[i] =
+            dataFrekuensiKumulatif[i - 1] + dataFrekuensi[i] || 0;
+        }
+
+        var angkaTerbagi = dataFrekuensiKumulatif[jumlahData - 1] * pecahan;
+        var index = dataFrekuensiKumulatif.findIndex(
+          (nilai) => nilai >= angkaTerbagi
+        );
+
+        var tepiBawah = data[index].split("-")[0] - 0.5;
+        var frekuensi = dataFrekuensi[index];
+        var frekuensiKumulatif = 0;
+
+        for (var i = 0; i < index; i++) {
+          frekuensiKumulatif += dataFrekuensi[i];
+        }
+
+        var hasil =
+          tepiBawah +
+          lebarKelas * ((angkaTerbagi - frekuensiKumulatif) / frekuensi);
+        var rumus = "";
+        if (input2 == 4) {
+          rumus += "$$Q_{i} = ";
+        } else if (input2 == 10) {
+          rumus += "$$D_{i} = ";
+        } else if (input2 == 100) {
+          rumus += "$$P_{i} = ";
+        }
+        rumus +=
+          tepiBawah +
+          " + " +
+          lebarKelas +
+          " \\left( \\frac{" +
+          angkaTerbagi +
+          " - " +
+          frekuensiKumulatif +
+          "}{" +
+          frekuensi +
+          "} \\right) = " +
+          hasil.toFixed(2) +
+          "$$";
+
+        document.getElementById("penjelasan").innerHTML = rumus;
+        ubah_table(
+          data,
+          dataFrekuensi,
+          dataFrekuensiKumulatif,
+          jumlahData,
+          hasil,
+          index
+        );
+      }
+
+      function ubah_table(
+        data,
+        dataFrekuensi,
+        dataFrekuensiKumulatif,
+        jumlahData,
+        hasil,
+        index
+      ) {
+        var dataTabel = document.getElementById("table_data");
+
+        dataTabel.innerHTML = `
+                    <tr style="background: #17202a; color:white; height: 40px">
+                        <td>Nilai</td>
+                        <td>Frekuensi</td>
+                        <td>Frekuensi Kumulatif</td>
+                    </tr>
+
+                    ${data
+                      .map(
+                        (nilai, i) => `
+                        <tr style=" background: ${
+                          i == index ? "red;color:white; " : ""
+                        }">
+                            <td>${nilai}</td>
+                            <td id="cell_${i}" onclick="handleClick('${i}')">${
+                          dataFrekuensi[i] || 0
+                        }</td>
+                            <td>${dataFrekuensiKumulatif[i] || 0}</td>
+                        </tr>
+                    `
+                      )
+                      .join("")}
+                    <tr style="background: #17202a; color:white; height: 40px">
+                        <td colspan="2">Hasil</td>
+                        <td>${hasil.toFixed(2)}</td>
+                    </tr>
+                `;
+        MathJax.typeset();
+      }
+
+      function handleClick(index) {
+        let cellTerpilih = document.getElementById(`cell_${index}`);
+        const input = `<input type="number" onblur="saveData(${index}, this.value)" onkeydown="handleKeydown(event, ${index})" value="${cellTerpilih.textContent.trim()}">`;
+
+        cellTerpilih.innerHTML = input;
+
+        const elementInput = cellTerpilih.querySelector("input");
+        elementInput.focus();
+        elementInput.select();
+      }
+
+      function handleKeydown(event, index) {
+        if (event.key === "Enter") {
+          saveData(index, event.target.value || 0);
+        } else if (event.key === "Tab") {
+          event.preventDefault();
+          saveData(index, event.target.value || 0);
+          const nextCell = document.getElementById(`cell_${index + 1}`);
+          if (nextCell) nextCell.click();
+        }
+      }
+
+      function saveData(index, value) {
+        dataFrekuensiGlobal[index] = parseInt(value);
+        hitungData(dataFrekuensiGlobal);
+      }
+    </script>
+  </body>
+</html>
